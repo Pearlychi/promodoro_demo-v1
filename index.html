@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>番茄鬧鐘教學升級版</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>番茄鬧鐘</h1>
+    <div class="custom-inputs">
+      <label>
+        工作：
+        <input id="workInput" type="number" min="1" max="60" value="25"> 分
+      </label>
+      <label>
+        休息：
+        <input id="breakInput" type="number" min="1" max="30" value="5"> 分
+      </label>
+      <button id="setBtn">設定</button>
+    </div>
+    <div id="timer" class="timer-display">25:00</div>
+    <div class="button-group">
+      <button id="startBtn">開始</button>
+      <button id="pauseBtn">暫停</button>
+      <button id="resetBtn">重設</button>
+    </div>
+    <div class="mode-switch">
+      <button id="workModeBtn" class="active">工作</button>
+      <button id="breakModeBtn">休息</button>
+    </div>
+    <div class="mute-control">
+      <label>
+        <input type="checkbox" id="muteCheckbox">
+        靜音
+      </label>
+    </div>
+    <audio id="beep" src="https://freesound.org/data/previews/64/64619_634166-lq.mp3"></audio>
+  </div>
+  <footer>
+    <div class="footer-text">Pearly Chi</div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
