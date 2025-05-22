@@ -167,3 +167,27 @@ footer {
     padding: 0.4em 0.8em;
   }
 }
+.avatar-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.3em;
+}
+
+.avatar-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 3px solid #f1f1f1;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+  background: #e7e7e7;
+  transition: box-shadow .19s;
+}
+
+@media (max-width: 540px) {
+  .avatar-img {
+    width: 64px;
+    height: 64px;
+  }
+}
